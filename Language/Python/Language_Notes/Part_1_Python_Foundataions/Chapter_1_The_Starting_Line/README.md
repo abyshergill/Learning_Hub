@@ -39,7 +39,7 @@ print("Hello!\nI am on a new line.")
 # You can also use multiple items in a print statement
 # 'sep' changes what separates the words (default is a space)
 # 'end' changes what goes at the very end (default is a newline)
-print("Harry", "Ron", "Hermione", sep=" ~ ", end="... END OF LIST\n")
+print("Aby", "Ram", "Shyam", sep=" ~ ", end="... END OF LIST\n")
 
 ```
 
