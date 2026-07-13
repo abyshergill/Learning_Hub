@@ -13,15 +13,15 @@ In Python, a string is basically an array (or a train) of characters. Because of
 *Note: In programming, counting almost always starts at `0`, not `1`!*
 
 ```python
-name = "Harry"
+name = "Kuldeep"
 
 # Indexing: Grabbing a single character
-print(name[0])  # Prints 'H'
-print(name[1])  # Prints 'a'
+print(name[0])  # Prints 'K'
+print(name[1])  # Prints 'u'
 
 # Slicing: Grabbing a chunk [start:stop]
 # It grabs from the start index up to, but NOT including, the stop index.
-print(name[0:4]) # Prints "Harr"
+print(name[0:4]) # Prints "kuld"
 
 # String Methods: Built-in tools to modify strings
 sentence = "Python is AWESOME"
