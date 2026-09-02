@@ -41,3 +41,49 @@ Flag,Description
 * -v,Verbose mode. Displays each file name on the screen as it is being copied in real time.
 * -i,Interactive mode. Prompts you with a warning before overwriting any existing files.
 
+---
+
+## Edge Cases
+
+The standard GNU `cp` command does not have an `--exclude` flag.
+
+To copy everything from a parent directory into the current subfolder while skipping the target folder itself, substitute <target-folder> and /path/to/source/ with your actual directory paths:
+
+---
+
+
+### Option 1: Use `rsync` (Recommended & SAFEST)
+
+`rsync` natively supports excluding specific files or directories during a copy:
+
+```bash
+rsync -av --exclude='<target-folder>' /path/to/source/ .
+```
+
+```bash
+rsync -av --exclude='subfolder_name' ../ .
+```
+
+---
+
+### Option 2: Use Shell Pattern Matching (Bash)
+
+Enable extended globbing (`extglob`) so you can tell `cp` to copy everything **except** `subfolder_name`:
+
+```bash
+shopt -s extglob
+cp -r ../!(subfolder_name) .
+
+```
+
+---
+
+### Option 3: Copy Specific Subdirectories Individually
+
+If you only need specific directories or files (like your Django app modules, static files, or `requirements.txt`), list them directly:
+
+```bash
+cp -r ~/app/manage.py ~/app/requirements.txt ~/app/config .
+
+```
+
