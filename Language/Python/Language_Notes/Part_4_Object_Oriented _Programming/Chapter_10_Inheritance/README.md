@@ -62,9 +62,9 @@ class Gamer:
 class Programmer(Employee, Gamer):
     pass # 'pass' means we don't want to add any new code right now
 
-harry = Programmer()
-harry.work() # Inherited from Employee
-harry.play() # Inherited from Gamer
+john = Programmer()
+john.work() # Inherited from Employee
+john.play() # Inherited from Gamer
 
 ```
 
@@ -81,7 +81,7 @@ Unlike Java or C++, Python doesn't have strict security blocks, but it uses **na
 ```python
 class BankAccount:
     def __init__(self):
-        self.owner = "Harry"       # PUBLIC: Anyone can access this
+        self.owner = "John"       # PUBLIC: Anyone can access this
         self._branch = "Main"      # PROTECTED: Should only be used internally
         self.__balance = 5000      # PRIVATE: Highly restricted
 

@@ -100,10 +100,10 @@ class Book:
     def __len__(self):
         return self.pages
 
-my_book = Book("Harry Potter", 350)
+my_book = Book("Golden Book", 350)
 
 # Because we defined __str__, this looks beautiful!
-print(my_book)        # Outputs: 'Harry Potter'
+print(my_book)        # Outputs: 'Golden Book'
 
 # Because we defined __len__, we can treat our object like a list!
 print(len(my_book))   # Outputs: 350

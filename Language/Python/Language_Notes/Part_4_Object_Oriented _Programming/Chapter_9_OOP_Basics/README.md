@@ -57,11 +57,11 @@ class Employee:
         print(f"Employee {self.name} makes ${self.salary} a year.")
 
 # We pass the unique data directly into the parentheses when creating the object
-emp1 = Employee("Harry", 85000)
+emp1 = Employee("John", 85000)
 emp2 = Employee("Alice", 92000)
 
 # Each object remembers its own state!
-emp1.get_details() # Outputs: Employee Harry makes $85000 a year.
+emp1.get_details() # Outputs: Employee John makes $85000 a year.
 emp2.get_details() # Outputs: Employee Alice makes $92000 a year.
 
 ```
@@ -102,4 +102,3 @@ Hello, world!
 
 ```
 
-CodeWithHarry also introduces built-in decorators like `@property`, which allows you to access a method exactly like an attribute (without using parentheses), making your code much cleaner when getting or setting hidden data.

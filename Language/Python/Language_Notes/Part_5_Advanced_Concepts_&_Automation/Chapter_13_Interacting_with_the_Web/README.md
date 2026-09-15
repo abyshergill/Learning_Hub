@@ -38,8 +38,6 @@ else:
 
 What happens if you want data from a website, but they *don't* have an API? You have to extract the data directly from the raw HTML of the webpage. This is called **Web Scraping**.
 
-CodeWithHarry introduces a powerful library called `BeautifulSoup` to do this. (Install it using `pip install beautifulsoup4`).
-
 Here is the standard workflow for scraping a site:
 
 1. Use `requests` to download the raw HTML of the webpage.
